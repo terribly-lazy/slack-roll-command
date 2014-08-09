@@ -12,12 +12,14 @@ function roll(text) {
     return "" + parser.parse(text);
 }
 
-module.exports = function(ee) {
-    ee.on('roll', function(slack) {
-        try {
-            slack.replyUser(roll(slack.text));
-        } catch (e) {
-            slack.error(e.toString());
-        }
-    });
-};
+module.exports = function(configuration) {
+    return function(ee) {
+        ee.on('roll', function(slack) {
+            try {
+                slack.replyUser(roll(slack.text));
+            } catch (e) {
+                slack.error(e.toString());
+            }
+        });
+    };
+}

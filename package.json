@@ -1,6 +1,6 @@
 {
     "name": "slack-roll-command",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "A slack command to roll dice",
     "main": "index.js",
     "dependencies": {
