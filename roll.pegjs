@@ -62,7 +62,7 @@ additive
 = "+" number:number { return new AdditiveToken(number) }
 
 subtractive
-= "*" number:number { return new SubtractiveToken(number) }
+= "-" number:number { return new SubtractiveToken(number) }
 
 number
 = dieRoll
