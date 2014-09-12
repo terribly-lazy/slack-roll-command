@@ -6,7 +6,7 @@ Usage: `/roll 2d6`
 
 installing
 ----------
-The simplest way to start running this server is to use [slack-command-server](https://github.com/terribly-lazy/slack-command-server).
+The simplest way to start running this command is to use [slack-command-server](https://github.com/terribly-lazy/slack-command-server).
 
 Simply clone that repo and configure it as follows:
 
